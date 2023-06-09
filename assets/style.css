@@ -20,14 +20,20 @@ h5,
 h6 {
   margin: 0;
 }
-.header {
+.header__inner1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
-.header__input {
+
+.header__inner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__input1 {
   background: #ffffff;
   border: 1px solid #ebebf1;
   border-radius: 5px;
@@ -37,6 +43,19 @@ h6 {
   color: #bbc4d6;
   padding: 12px;
   width: 58%;
+}
+
+.header__input2 {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #bbc4d6;
+  padding: 12px;
+  width: 100%;
 }
 .header__user {
   display: flex;
@@ -135,6 +154,16 @@ h6 {
 }
 
 @media (max-width: 376px) {
+  .header__input2 {
+    display: block;
+  }
+  .header__input1 {
+    display: none;
+  }
+
+  .header__name {
+    display: none;
+  }
   .page {
     padding: 70px 20px;
   }
